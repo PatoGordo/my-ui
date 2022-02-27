@@ -8,12 +8,12 @@ Promise.all([
     /*
     css += `\n\n.c-${color} {color: @${color} !important;}`
     css += `\n.bg-${color} {background-color: @${color} !important;}`
-    css += `\n.border-${color} {border-color: @${color} !important;} button.outlined.border-${color} {&:hover {background-color: @${color}-10 !important;} color: @${color} !important;}`
+    css += `\n.border-${color} {border-color: @${color} !important;} button.outlined.border-${color} {&:hover {background-color: @${color} !important; color: @white !important; filter: none;} color: @${color} !important;}`
     
     if (color !== "black" && color !== "white") {
       css += `\n.c-deep-${color} {color: @deep-${color} !important;}`
       css += `\n.bg-deep-${color} {background-color: @deep-${color} !important;}`
-      css += `\n.border-deep-${color} {border-color: @deep-${color} !important;} button.outlined.border-deep-${color} {&:hover {background-color: @deep-${color}-10 !important;} color: @deep-${color} !important;}`
+      css += `\n.border-deep-${color} {border-color: @deep-${color} !important;} button.outlined.border-deep-${color} {&:hover {background-color: @deep-${color} !important; color: @white !important; filter: none;} color: @deep-${color} !important;}`
     }
     */
     
@@ -40,6 +40,6 @@ Promise.all([
   })
 ]).then(() => {
   // console.log(css)
-  // window.css.textContent = css.trim()
-  window.message.textContent = localStorage.getItem('http://localhost:7700/src/styles/style.less')
+  // window.message.textContent = css.trim()
+  // window.message.textContent = localStorage.getItem('http://localhost:7700/src/styles/style.less')
 })

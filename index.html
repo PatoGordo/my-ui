@@ -12,12 +12,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
   <!-- Custom Styles -->
   <script>// less = { env: "production", async: false, fileAsync: false, poll: 1000, useFileCache: true }</script>
   <link rel="stylesheet/less" type="text/css" href="src/styles/style.less" />
   <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
 
   <style>
+    html {
+      display: grid;
+      place-items: center;
+    }
+    
+    body {
+      width: min(420px, 100%) !important;
+    }
+  
     #colors {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -68,9 +79,9 @@
     <div class="container">
       <h2 class="sub-title">Normal button</h2>
       <button>Vanilla button</button>
-      <button class="outlined">Vanilla button</button>
+      <button class="outlined">Vanilla outlined button</button>
       <button class="bg-blue c-white">Normal button</button>
-      <button class="outlined border-pink">Outlined button</button>
+      <button class="outlined border-pink">Outlined and colored button</button>
       
       <h2 class="sub-title">Rounded button</h2>
       <button class="rounded bg-deep-purple c-white">Rounded button</button>
@@ -108,6 +119,23 @@
       <input class="rounded outlined" id="name4" type="text" placeholder="What is your name?" />
     </div>
     
+    <h2 class="sub-title">Select inputs</h2>
+    <div class="container">
+      <label class="osr" for="language">Select input</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="pt">Portuguese</option>
+        <option value="es">Spanish</option>
+      </select>
+      
+      <label class="osr" for="language">Select input</label>
+      <select class="outlined" id="language">
+        <option value="en">English</option>
+        <option value="pt">Portuguese</option>
+        <option value="es">Spanish</option>
+      </select>
+    </div>
+    
     <h2 class="sub-title">Textareas</h2>
     <div class="container">
       <label class="osr" for="mesaage">Vanilla textarea</label>
@@ -121,11 +149,47 @@
       
       <label class="osr" for="mesaage4">Rounded outlined textarea</label>
       <textarea class="rounded outlined" id="message4" placeholder="What is your message?"></textarea>
-
     </div>
   </section>
   
-  <!--textarea id="css"></textarea-->
+  <section class="container" style="padding: 16px 0; gap: 8px;">
+    <h1 class="title" style="margin-left: 16px;">Topbars/Navbars</h1>
+    
+    <h2 class="sub-title" style="margin-left: 16px;">Centered navbar</h2>
+    <nav class="navbar centered">
+      <h1 class="title">Navbar Text</h1>
+    </nav>
+    
+    <h2 class="sub-title" style="margin-left: 16px;">Navbar with content</h2>
+    <nav class="navbar bg-deep-purple">
+      <h1 class="title">Navbar Text</h1>
+      
+      <ul class="content">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Learn</a></li>
+      </ul>
+    </nav>
+    
+    <h2 class="sub-title" style="margin-left: 16px;">Responsive navbar</h2>
+    <nav class="navbar responsive bg-pink">
+      <h1 class="title">Navbar Text</h1>
+      
+      <span class="iconify toggler" data-icon="charm:menu-hamburger"></span>
+      
+      <ul class="content">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Learn</a></li>
+      </ul>
+    </nav>
+  </section>
+  
+  <section class="container distance">
+    <h1 class="title">Miscellaneous</h1>
+    
+    <a href="#">Anchor/Link element</a>
+  </section>
   
   <script src="src/main.js"></script>
 </body>
