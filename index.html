@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <script>// less = { env: "production", async: false, fileAsync: false, poll: 1000, useFileCache: true }</script>
+  <link rel="stylesheet/less" type="text/css" href="src/styles/style.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+
+  <style>
+    #colors {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .pad-block {
+      max-width: 80px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 4px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container distance">
+    <h1 class="title">Typography</h1>
+    
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    
+    <h2 class="sub-title">Paragraph and Span example</h2>
+    <p>Paragraph example Paragraph example Paragraph example Paragraph example</p>
+    <span>Span example Span example Span example Span example Span example Span example</span>  
+    
+    <h2 class="sub-title">Quotations example</h2>
+    <div>
+      <q>It is never too late to be what you might have been.</q>
+      <p class="quote-reference">George Eliot</p>
+    </div>
+  </section>
+  
+  <section class="container distance">
+    <h1 class="title">Colors</h1>
+    
+    <div id="colors" class="container"></div>
+  </section>
+  
+  <section class="container distance">
+    <h1 class="title">Buttons</h1>
+    
+    <p>There is some button styles</p>
+    
+    <div class="container">
+      <h2 class="sub-title">Normal button</h2>
+      <button>Vanilla button</button>
+      <button class="outlined">Vanilla button</button>
+      <button class="bg-blue c-white">Normal button</button>
+      <button class="outlined border-pink">Outlined button</button>
+      
+      <h2 class="sub-title">Rounded button</h2>
+      <button class="rounded bg-deep-purple c-white">Rounded button</button>
+      <button class="outlined rounded border-deep-purple">Rounded outlined button</button>
+      
+      <h2 class="sub-title">Half button</h2>
+      <span class="container row">
+        <button class="bg-green c-white half">Half button</button>
+        <button class="outlined border-red half">Half outlined button</button>
+      </span>
+      
+     <h2 class="sub-title">Half rounded button</h2>
+      <span class="container row">
+        <button class="rounded bg-pink c-white half">Half rounded button</button>
+        <button class="rounded outlined border-orange half">Half rounded button</button>
+      </span>
+    </div>
+  </section>
+  
+  <section class="container distance">
+    <h1 class="title">Inputs and Textareas</h1>
+    
+    <h2 class="sub-title">Inputs</h2>
+    <div class="container">
+      <label class="osr" for="name">Vanilla input</label>
+      <input id="name" type="text" placeholder="What is your name?" />
+      
+      <label class="osr" for="name2">Outlined input</label>
+      <input class="outlined" id="name2" type="text" placeholder="What is your name?" />
+      
+      <label class="osr" for="name3">Rounded input</label>
+      <input class="rounded" id="name3" type="text" placeholder="What is your name?" />
+      
+      <label class="osr" for="name4">Rounded outlined input</label>
+      <input class="rounded outlined" id="name4" type="text" placeholder="What is your name?" />
+    </div>
+    
+    <h2 class="sub-title">Textareas</h2>
+    <div class="container">
+      <label class="osr" for="mesaage">Vanilla textarea</label>
+      <textarea id="message" placeholder="What is your message?"></textarea>
+      
+      <label class="osr" for="mesaage2">Outlined textarea</label>
+      <textarea class="outlined" id="message2" placeholder="What is your message?"></textarea>
+      
+      <label class="osr" for="mesaage3">Rounded textarea</label>
+      <textarea class="rounded" id="message3" placeholder="What is your message?"></textarea>
+      
+      <label class="osr" for="mesaage4">Rounded outlined textarea</label>
+      <textarea class="rounded outlined" id="message4" placeholder="What is your message?"></textarea>
+
+    </div>
+  </section>
+  
+  <!--textarea id="css"></textarea-->
+  
+  <script src="src/main.js"></script>
+</body>
+</html>

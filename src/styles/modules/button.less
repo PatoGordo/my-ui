@@ -1,0 +1,29 @@
+button, .button-like, .btn {
+  width: min(510px, 100%);
+  border: 0;
+  padding: 12px 16px;
+  border-radius: @round;
+  background: #dedede;
+  color: #222;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: all @anim;
+  &:hover {
+    filter: @filter;
+  }
+  &.outlined {
+    border: 1px solid #333;
+    background: transparent;
+    &:hover {
+      background: rgba(0, 0, 0, 0.12);
+    }
+  }
+  &.half {
+    width: 50%;
+  }
+  &.rounded {
+    border-radius: 1000px;
+  }
+}
