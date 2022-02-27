@@ -1,3 +1,23 @@
+let isNavOpened = false
+
+document.querySelector("#toggler").addEventListener("click", () => {
+  document.querySelector("#navbar").classList[isNavOpened? "remove" : "add"]("open")
+  
+  if (isNavOpened) {
+    document.querySelector("#mobile-navbar").style.top = '-500px'
+    isNavOpened = false
+  } else {
+    document.querySelector("#mobile-navbar").style.top = '60px'
+    isNavOpened = true
+  }
+})
+
+document.querySelector("#mobile-navbar").addEventListener("click", () => {
+  document.querySelector("#navbar").classList[isNavOpened? "remove" : "add"]("open")
+  document.querySelector("#mobile-navbar").style.top = '-500px'
+  isNavOpened = false
+})
+
 const colors = ["white", "black", "blue", "green", "red", "orange", "pink", "purple",]
 
 let css = ''

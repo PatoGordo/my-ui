@@ -43,10 +43,59 @@
       border: 1px solid #333;
       text-align: center;
     }
+    
+    .mobile-content {
+      position: absolute;
+      top: -500px;
+      height: 140px;
+      list-style: none;
+      transition: all 300ms;
+      z-index: 1;
+    }
+    
+    .mobile-content.open {
+      top: 60px;
+    }
+    
+    .mobile-content li {
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+    }
+    
+    .mobile-content li a {
+      width: 100%;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .navbar {
+      position: relative;
+      transition: all 300ms;
+      z-index: 10;
+    }
+    
+    .navbar.open {
+      margin-bottom: 140px;
+    }
   </style>
 </head>
 
 <body>
+  <nav id="navbar" class="navbar responsive bg-deep-purple">
+    <h1>My UI</h1>
+    <span id="toggler" class="iconify toggler" data-icon="charm:menu-hamburger"></span>
+    <ul class="content">
+      <li><a href="/">Home</a></li>
+      <li><a href="https://github.com/PatoGordo/my-ui">Github</a></li>
+    </ul>
+  </nav>
+  
+  <ul id="mobile-navbar" class="mobile-content container center bg-purple">
+    <li><a href="/">Home</a></li>
+    <li><a href="https://github.com/PatoGordo/my-ui">Github</a></li>
+  </ul>
+  
   <section class="container distance">
     <h1 class="title">Typography</h1>
     
