@@ -422,6 +422,68 @@ select.rounded {
 .navbar.centered {
   justify-content: center !important;
 }
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  gap: 8px;
+  gap: 0;
+}
+.card.center {
+  align-items: center !important;
+  justify-content: center !important;
+}
+.card.start {
+  align-items: start !important;
+  justify-content: start !important;
+}
+.card.end {
+  align-items: end !important;
+  justify-content: end !important;
+}
+.card.row {
+  flex-direction: row !important;
+}
+.card.distance {
+  padding: 16px;
+}
+.card header {
+  width: 100%;
+  background: #ededed;
+  padding: 16px;
+  border-radius: 4px 4px 0 0;
+}
+.card main {
+  width: 100%;
+  background: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.card main p {
+  padding: 8px 16px 0 16px;
+}
+.card main img {
+  width: 100%;
+  object-fit: cover;
+}
+.card footer {
+  width: 100%;
+  background: #ededed;
+  padding: 8px 16px 16px 16px;
+  border-radius: 0 0 4px 4px;
+}
+.card.no-img p {
+  padding: 16px 16px 0 16px;
+}
+.card.divided header {
+  border-bottom: 1px solid #333;
+}
 textarea {
   min-height: 120px;
   width: 100%;
