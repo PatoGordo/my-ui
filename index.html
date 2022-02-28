@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark dark-navbar">
 
 <head>
   <meta charset="UTF-8">
@@ -79,7 +79,7 @@
     }
 
     .navbar.open {
-      margin-bottom: 140px;
+      margin-bottom: 160px;
     }
   </style>
 </head>
@@ -98,6 +98,8 @@
     <li><a href="/">Home</a></li>
     <li><a href="https://github.com/PatoGordo/my-ui">Github</a></li>
   </ul>
+
+  <button id="theme" class="outlined border-purple c-purple rounded half" style="margin-left: 16px">Change to dark theme</button>
 
   <section class="container distance">
     <h1 class="title">Typography</h1>
@@ -315,6 +317,20 @@
         document.querySelector("#navbar").classList.remove("open")
         document.querySelector("#mobile-navbar").style.top = '-200px'
         opened = false
+      }
+    })
+
+    document.querySelector("#theme").addEventListener("click", (e) => {
+      const html = document.querySelector("html")
+
+      if (html.className.includes("dark")) {
+        html.classList.remove("dark")
+        html.classList.remove("dark-navbar")
+        e.target.textContent = e.target.textContent.replace("dark", "light")
+      } else {
+        html.classList.add("dark")
+        html.classList.add("dark-navbar")
+        e.target.textContent = e.target.textContent.replace("light", "dark")
       }
     })
   </script>

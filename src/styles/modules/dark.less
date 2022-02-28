@@ -1,0 +1,95 @@
+html {
+  transition: all .15s;
+
+  * {
+    transition: all .15s;
+  }
+}
+
+html.dark {
+  body {
+    background: #24242d;
+    color: #fff;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  h2 {
+    color: #fdfdfd;
+  }
+
+  h3 {
+    color: #dfdfdf;
+  }
+
+  p,
+  span,
+  q,
+  li,
+  dd,
+  dt {
+    color: #dfdfdf;
+  }
+
+  .card {
+    header h3 {
+      color: #fff;
+    }
+
+    header,
+    main,
+    footer {
+      background: #42445A;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    background: #42445A;
+    color: #fff;
+
+    &::placeholder {
+      color: #dedede;
+    }
+
+    &.outlined {
+      background: transparent;
+      border: 1px solid #878787;
+    }
+  }
+
+  button {
+    background: #42445A;
+    color: #dfdfdf;
+
+    &.outlined {
+      border: 1px solid #878787;
+      background: transparent;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+    }
+  }
+
+  &.dark-navbar {
+    .navbar {
+      background: #272836 !important;
+      color: #fff;
+      box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.045);
+
+      &.content {
+        background: transparent !important;
+        color: #fff !important;
+      }
+    }
+
+    .mobile-content {
+      background: #272832 !important;
+      color: #fff !important;
+    }
+  }
+}
