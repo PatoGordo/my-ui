@@ -1,4 +1,4 @@
-const colors = ["white", "black", "blue", "green", "red", "orange", "pink", "purple",]
+const colors = ["white", "black", "blue", "green", "red", "orange", "pink", "purple", ]
 
 let css = ''
 
@@ -16,25 +16,25 @@ Promise.all([
       css += `\n.border-deep-${color} {border-color: @deep-${color} !important;} button.outlined.border-deep-${color} {&:hover {background-color: @deep-${color} !important; color: @white !important; filter: none;} color: @deep-${color} !important;}`
     }
     */
-    
+
     const el = document.createElement("span")
-    
+
     el.classList.add(`bg-${color}`)
     el.classList.add('pad-block')
     el.textContent = `${color}`
-    
+
     if (color === "black") {
       el.classList.add('c-white')
     }
-    
+
     window.colors.appendChild(el)
-    
+
     if (color !== "black" && color !== "white") {
       const el2 = document.createElement("span")
       el2.classList.add('pad-block')
       el2.classList.add(`bg-deep-${color}`)
       el2.textContent = 'deep ' + color
-      
+
       window.colors.appendChild(el2)
     }
   })

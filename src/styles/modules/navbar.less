@@ -1,14 +1,15 @@
 .navbar {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-height: 60px;
   background: @blue;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
   margin-bottom: 16px;
   padding: 16px;
+
   h1 {
     text-align: center;
     color: @white;
@@ -18,11 +19,7 @@
     display: grid;
     place-items: center;
   }
-  
-  input[type="checkbox"]#controller {
-    .osr()
-  }
-  
+
   .toggler {
     width: 24px;
     height: 24px;
@@ -30,7 +27,7 @@
     cursor: pointer;
     display: none;
   }
-  
+
   ul.content {
     list-style: none;
     gap: 8px;
@@ -38,26 +35,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     li a {
       color: @white;
       text-decoration: none;
     }
   }
-  
-  
+
+
   &.responsive {
     justify-content: space-between;
-    
+
     @media (max-width: 420px) {
       .toggler {
         display: block;
       }
-      
+
       ul.content {
         display: none;
       }
     }
   }
+
   &.centered {
     justify-content: center !important;
   }
