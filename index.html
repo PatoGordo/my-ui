@@ -274,5 +274,20 @@
   </section>
   
   <script src="src/main.js"></script>
+  <script>
+    let opened = false
+    
+    document.querySelector("#toggler").addEventListener("click", () => {
+      if (!opened) {
+        document.querySelector("#navbar").classList.add("open")
+        document.querySelector("#mobile-navbar").style.top = '60px'
+        opened = true
+      } else {
+        document.querySelector("#navbar").classList.remove("open")
+        document.querySelector("#mobile-navbar").style.top = '-200px'
+        opened = false
+      }
+    })
+  </script>
 </body>
 </html>
