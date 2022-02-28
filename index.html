@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark dark-navbar">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -326,11 +326,11 @@
       if (html.className.includes("dark")) {
         html.classList.remove("dark")
         html.classList.remove("dark-navbar")
-        e.target.textContent = e.target.textContent.replace("dark", "light")
+        e.target.textContent = e.target.textContent.replace("light", "dark")
       } else {
         html.classList.add("dark")
         html.classList.add("dark-navbar")
-        e.target.textContent = e.target.textContent.replace("light", "dark")
+        e.target.textContent = e.target.textContent.replace("dark", "light")
       }
     })
   </script>
