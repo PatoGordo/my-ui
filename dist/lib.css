@@ -225,7 +225,7 @@ textarea.rounded {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background: #fff !important;
 }
 
 .border-white {
@@ -237,13 +237,13 @@ button.outlined.border-white {
 }
 
 button.outlined.border-white:hover {
-  background-color: #fff !important;
+  background: #fff !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.white {
-  background-color: #fff !important;
+  background: #fff !important;
 }
 
 .switch input:checked+.slider.white {
@@ -255,7 +255,7 @@ button.outlined.border-white:hover {
 }
 
 .bg-black {
-  background-color: #000 !important;
+  background: #000 !important;
 }
 
 .border-black {
@@ -267,13 +267,13 @@ button.outlined.border-black {
 }
 
 button.outlined.border-black:hover {
-  background-color: #000 !important;
+  background: #000 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.black {
-  background-color: #000 !important;
+  background: #000 !important;
 }
 
 .switch input:checked+.slider.black {
@@ -285,7 +285,7 @@ button.outlined.border-black:hover {
 }
 
 .bg-blue {
-  background-color: #0080ff !important;
+  background: #0080ff !important;
 }
 
 .border-blue {
@@ -297,13 +297,13 @@ button.outlined.border-blue {
 }
 
 button.outlined.border-blue:hover {
-  background-color: #0080ff !important;
+  background: #0080ff !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.blue {
-  background-color: #0080ff !important;
+  background: #0080ff !important;
 }
 
 .switch input:checked+.slider.blue {
@@ -315,7 +315,7 @@ button.outlined.border-blue:hover {
 }
 
 .bg-deep-blue {
-  background-color: #2962FF !important;
+  background: #2962FF !important;
 }
 
 .border-deep-blue {
@@ -327,13 +327,13 @@ button.outlined.border-deep-blue {
 }
 
 button.outlined.border-deep-blue:hover {
-  background-color: #2962FF !important;
+  background: #2962FF !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-blue {
-  background-color: #2962FF !important;
+  background: #2962FF !important;
 }
 
 .switch input:checked+.slider.deep-blue {
@@ -345,7 +345,7 @@ button.outlined.border-deep-blue:hover {
 }
 
 .bg-green {
-  background-color: #00d676 !important;
+  background: #00d676 !important;
 }
 
 .border-green {
@@ -357,13 +357,13 @@ button.outlined.border-green {
 }
 
 button.outlined.border-green:hover {
-  background-color: #00d676 !important;
+  background: #00d676 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.green {
-  background-color: #00d676 !important;
+  background: #00d676 !important;
 }
 
 .switch input:checked+.slider.green {
@@ -375,7 +375,7 @@ button.outlined.border-green:hover {
 }
 
 .bg-deep-green {
-  background-color: #00C853 !important;
+  background: #00C853 !important;
 }
 
 .border-deep-green {
@@ -387,13 +387,13 @@ button.outlined.border-deep-green {
 }
 
 button.outlined.border-deep-green:hover {
-  background-color: #00C853 !important;
+  background: #00C853 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-green {
-  background-color: #00C853 !important;
+  background: #00C853 !important;
 }
 
 .switch input:checked+.slider.deep-green {
@@ -405,7 +405,7 @@ button.outlined.border-deep-green:hover {
 }
 
 .bg-red {
-  background-color: #F44336 !important;
+  background: #F44336 !important;
 }
 
 .border-red {
@@ -417,13 +417,13 @@ button.outlined.border-red {
 }
 
 button.outlined.border-red:hover {
-  background-color: #F44336 !important;
+  background: #F44336 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.red {
-  background-color: #F44336 !important;
+  background: #F44336 !important;
 }
 
 .switch input:checked+.slider.red {
@@ -435,7 +435,7 @@ button.outlined.border-red:hover {
 }
 
 .bg-deep-red {
-  background-color: #C62828 !important;
+  background: #C62828 !important;
 }
 
 .border-deep-red {
@@ -447,13 +447,13 @@ button.outlined.border-deep-red {
 }
 
 button.outlined.border-deep-red:hover {
-  background-color: #C62828 !important;
+  background: #C62828 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-red {
-  background-color: #C62828 !important;
+  background: #C62828 !important;
 }
 
 .switch input:checked+.slider.deep-red {
@@ -465,7 +465,7 @@ button.outlined.border-deep-red:hover {
 }
 
 .bg-orange {
-  background-color: #ff8800 !important;
+  background: #ff8800 !important;
 }
 
 .border-orange {
@@ -477,13 +477,13 @@ button.outlined.border-orange {
 }
 
 button.outlined.border-orange:hover {
-  background-color: #ff8800 !important;
+  background: #ff8800 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.orange {
-  background-color: #ff8800 !important;
+  background: #ff8800 !important;
 }
 
 .switch input:checked+.slider.orange {
@@ -495,7 +495,7 @@ button.outlined.border-orange:hover {
 }
 
 .bg-deep-orange {
-  background-color: #F57C00 !important;
+  background: #F57C00 !important;
 }
 
 .border-deep-orange {
@@ -507,13 +507,13 @@ button.outlined.border-deep-orange {
 }
 
 button.outlined.border-deep-orange:hover {
-  background-color: #F57C00 !important;
+  background: #F57C00 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-orange {
-  background-color: #F57C00 !important;
+  background: #F57C00 !important;
 }
 
 .switch input:checked+.slider.deep-orange {
@@ -525,7 +525,7 @@ button.outlined.border-deep-orange:hover {
 }
 
 .bg-pink {
-  background-color: #EC407A !important;
+  background: #EC407A !important;
 }
 
 .border-pink {
@@ -537,13 +537,13 @@ button.outlined.border-pink {
 }
 
 button.outlined.border-pink:hover {
-  background-color: #EC407A !important;
+  background: #EC407A !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.pink {
-  background-color: #EC407A !important;
+  background: #EC407A !important;
 }
 
 .switch input:checked+.slider.pink {
@@ -555,7 +555,7 @@ button.outlined.border-pink:hover {
 }
 
 .bg-deep-pink {
-  background-color: #E91E63 !important;
+  background: #E91E63 !important;
 }
 
 .border-deep-pink {
@@ -567,13 +567,13 @@ button.outlined.border-deep-pink {
 }
 
 button.outlined.border-deep-pink:hover {
-  background-color: #E91E63 !important;
+  background: #E91E63 !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-pink {
-  background-color: #E91E63 !important;
+  background: #E91E63 !important;
 }
 
 .switch input:checked+.slider.deep-pink {
@@ -585,7 +585,7 @@ button.outlined.border-deep-pink:hover {
 }
 
 .bg-purple {
-  background-color: #7C4DFF !important;
+  background: #7C4DFF !important;
 }
 
 .border-purple {
@@ -597,13 +597,13 @@ button.outlined.border-purple {
 }
 
 button.outlined.border-purple:hover {
-  background-color: #7C4DFF !important;
+  background: #7C4DFF !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.purple {
-  background-color: #7C4DFF !important;
+  background: #7C4DFF !important;
 }
 
 .switch input:checked+.slider.purple {
@@ -615,7 +615,7 @@ button.outlined.border-purple:hover {
 }
 
 .bg-deep-purple {
-  background-color: #651FFF !important;
+  background: #651FFF !important;
 }
 
 .border-deep-purple {
@@ -627,13 +627,13 @@ button.outlined.border-deep-purple {
 }
 
 button.outlined.border-deep-purple:hover {
-  background-color: #651FFF !important;
+  background: #651FFF !important;
   color: #fff !important;
   filter: none;
 }
 
 .switch input:checked+.slider.deep-purple {
-  background-color: #651FFF !important;
+  background: #651FFF !important;
 }
 
 .switch input:checked+.slider.deep-purple {
@@ -782,7 +782,7 @@ input[type="range"] {
 }
 
 .switch input:checked+.slider {
-  background-color: #0080ff;
+  background: #0080ff;
 }
 
 .switch input:focus+.slider {
@@ -802,7 +802,7 @@ input[type="range"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ededed;
+  background: #ededed;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 4px;
@@ -824,7 +824,7 @@ input[type="range"] {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -888,19 +888,19 @@ html.dark .progress {
 }
 
 html.dark .switch input:checked+.slider {
-  background-color: #0080ff;
+  background: #0080ff;
 }
 
 html.dark .switch input:checked+.slider:before {
-  background-color: white;
+  background: white;
 }
 
 html.dark .switch .slider {
-  background-color: #2f2f3b;
+  background: #2f2f3b;
 }
 
 html.dark .switch .slider:before {
-  background-color: #464658;
+  background: #464658;
 }
 
 html.dark input,
