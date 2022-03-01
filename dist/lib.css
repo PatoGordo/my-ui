@@ -242,7 +242,7 @@ button.outlined.border-white:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.white {
+.switch input:checked+.slider.c-white {
   background: #fff !important;
 }
 
@@ -272,7 +272,7 @@ button.outlined.border-black:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.black {
+.switch input:checked+.slider.c-black {
   background: #000 !important;
 }
 
@@ -302,7 +302,7 @@ button.outlined.border-blue:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.blue {
+.switch input:checked+.slider.c-blue {
   background: #0080ff !important;
 }
 
@@ -332,7 +332,7 @@ button.outlined.border-deep-blue:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-blue {
+.switch input:checked+.slider.c-deep-blue {
   background: #2962FF !important;
 }
 
@@ -362,7 +362,7 @@ button.outlined.border-green:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.green {
+.switch input:checked+.slider.c-green {
   background: #00d676 !important;
 }
 
@@ -392,7 +392,7 @@ button.outlined.border-deep-green:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-green {
+.switch input:checked+.slider.c-deep-green {
   background: #00C853 !important;
 }
 
@@ -422,7 +422,7 @@ button.outlined.border-red:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.red {
+.switch input:checked+.slider.c-red {
   background: #F44336 !important;
 }
 
@@ -452,7 +452,7 @@ button.outlined.border-deep-red:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-red {
+.switch input:checked+.slider.c-deep-red {
   background: #C62828 !important;
 }
 
@@ -482,7 +482,7 @@ button.outlined.border-orange:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.orange {
+.switch input:checked+.slider.c-orange {
   background: #ff8800 !important;
 }
 
@@ -512,7 +512,7 @@ button.outlined.border-deep-orange:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-orange {
+.switch input:checked+.slider.c-deep-orange {
   background: #F57C00 !important;
 }
 
@@ -542,7 +542,7 @@ button.outlined.border-pink:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.pink {
+.switch input:checked+.slider.c-pink {
   background: #EC407A !important;
 }
 
@@ -572,7 +572,7 @@ button.outlined.border-deep-pink:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-pink {
+.switch input:checked+.slider.c-deep-pink {
   background: #E91E63 !important;
 }
 
@@ -602,7 +602,7 @@ button.outlined.border-purple:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.purple {
+.switch input:checked+.slider.c-purple {
   background: #7C4DFF !important;
 }
 
@@ -632,7 +632,7 @@ button.outlined.border-deep-purple:hover {
   filter: none;
 }
 
-.switch input:checked+.slider.deep-purple {
+.switch input:checked+.slider.c-deep-purple {
   background: #651FFF !important;
 }
 

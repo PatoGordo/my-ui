@@ -85,7 +85,7 @@
 </head>
 
 <body>
-  <nav id="navbar" class="navbar responsive bg-deep-purple">
+  <nav id="navbar" class="navbar responsive bg-purple">
     <h1>My UI</h1>
     <span id="toggler" class="iconify toggler" data-icon="charm:menu-hamburger"></span>
     <ul class="content">
@@ -99,7 +99,13 @@
     <li><a href="https://github.com/PatoGordo/my-ui">Github</a></li>
   </ul>
 
-  <button id="theme" class="outlined border-purple c-purple rounded half" style="margin-left: 16px">Change to dark theme</button>
+  <div class="container distance row center" style="justify-content: space-between !important;">
+    <label for="theme"><strong>Dark mode</strong></label>
+    <label class="switch">
+      <input id="theme" type="checkbox">
+      <span class="slider rounded c-purple"></span>
+    </label>
+  </div>
 
   <section class="container distance">
     <h1 class="title">Typography</h1>
@@ -251,7 +257,7 @@
     <h2 class="sub-title">Switch</h2>
     <label class="switch">
       <input type="checkbox">
-      <span class="slider rounded purple"></span>
+      <span class="slider rounded c-purple"></span>
     </label>
     <label class="switch">
       <input type="checkbox">
@@ -263,7 +269,7 @@
     <h1 class="title">Progress bar and Loading</h1>
 
     <h2 class="sub-title">Progress bar</h2>
-    <div class="progress">
+    <div class="progress" checked>
       <span class="indicator" id="progress" style="width: 0%">0%</span>
     </div>
 
@@ -365,11 +371,9 @@
       if (html.className.includes("dark")) {
         html.classList.remove("dark")
         html.classList.remove("dark-navbar")
-        e.target.textContent = e.target.textContent.replace("light", "dark")
       } else {
         html.classList.add("dark")
         html.classList.add("dark-navbar")
-        e.target.textContent = e.target.textContent.replace("dark", "light")
       }
     })
 

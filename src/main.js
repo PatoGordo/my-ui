@@ -5,19 +5,19 @@ let css = ''
 Promise.all([
   colors.forEach((color) => {
     // GENERATE THE LESSCSS COLORS CODE 
-    /*
-    css += `\n\n.c-${color} {color: @${color} !important;}`
-    css += `\n.bg-${color} {background: @${color} !important;}`
-    css += `\n.border-${color} {border-color: @${color} !important;} button.outlined.border-${color} {&:hover {background: @${color} !important; color: @white !important; filter: none;} color: @${color} !important;}`
-    css += `\n.switch {input {&:checked+.slider {&.${color} {background: @${color} !important;}&.${color} {box-shadow: 0 0 1px @${color} !important;}}}}`
+    /* 
+     css += `\n\n.c-${color} {color: @${color} !important;}`
+     css += `\n.bg-${color} {background: @${color} !important;}`
+     css += `\n.border-${color} {border-color: @${color} !important;} button.outlined.border-${color} {&:hover {background: @${color} !important; color: @white !important; filter: none;} color: @${color} !important;}`
+     css += `\n.switch {input {&:checked+.slider {&.c-${color} {background: @${color} !important;}&.${color} {box-shadow: 0 0 1px @${color} !important;}}}}`
 
-    if (color !== "black" && color !== "white") {
-      css += `\n.c-deep-${color} {color: @deep-${color} !important;}`
-      css += `\n.bg-deep-${color} {background: @deep-${color} !important;}`
-      css += `\n.border-deep-${color} {border-color: @deep-${color} !important;} button.outlined.border-deep-${color} {&:hover {background: @deep-${color} !important; color: @white !important; filter: none;} color: @deep-${color} !important;}`
-      css += `\n.switch {input {&:checked+.slider {&.deep-${color} {background: @deep-${color} !important;}&.deep-${color} {box-shadow: 0 0 1px @deep-${color} !important;}}}}`
-    }
-    */
+     if (color !== "black" && color !== "white") {
+       css += `\n.c-deep-${color} {color: @deep-${color} !important;}`
+       css += `\n.bg-deep-${color} {background: @deep-${color} !important;}`
+       css += `\n.border-deep-${color} {border-color: @deep-${color} !important;} button.outlined.border-deep-${color} {&:hover {background: @deep-${color} !important; color: @white !important; filter: none;} color: @deep-${color} !important;}`
+       css += `\n.switch {input {&:checked+.slider {&.c-deep-${color} {background: @deep-${color} !important;}&.deep-${color} {box-shadow: 0 0 1px @deep-${color} !important;}}}}`
+     }
+     */
 
     const el = document.createElement("span")
 
