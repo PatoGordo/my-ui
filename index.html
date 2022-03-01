@@ -230,6 +230,45 @@
       <label class="osr" for="mesaage4">Rounded outlined textarea</label>
       <textarea class="rounded outlined" id="message4" placeholder="What is your message?"></textarea>
     </div>
+
+    <h2 class="sub-title">Checkbox</h2>
+    <div class="container row v-center h-start">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Vanilla checkbox</label>
+    </div>
+
+    <h2 class="sub-title">Radio</h2>
+    <div class="container row v-center h-start">
+      <input type="radio" id="radio">
+      <label for="radio">Vanilla radio</label>
+    </div>
+
+    <h2 class="sub-title">Range</h2>
+    <div class="container row v-center h-start">
+      <input type="range" min="0" max="100" value="10">
+    </div>
+
+    <h2 class="sub-title">Switch</h2>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider rounded purple"></span>
+    </label>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="container distance">
+    <h1 class="title">Progress bar and Loading</h1>
+
+    <h2 class="sub-title">Progress bar</h2>
+    <div class="progress">
+      <span class="indicator" id="progress" style="width: 0%">0%</span>
+    </div>
+
+    <h2 class="sub-title">Loading spinner</h2>
+    <div class="loading"></div>
   </section>
 
   <section class="container distance">
@@ -333,6 +372,20 @@
         e.target.textContent = e.target.textContent.replace("dark", "light")
       }
     })
+
+    setInterval(() => {
+      const progress = document.querySelector("#progress")
+
+      const num = Number(progress.textContent.replace("%", ""))
+
+      if (num / 100 < 1) {
+        progress.textContent = progress.textContent.replace(num, num + 10)
+        progress.style.width = `${num + 10}%`
+      } else {
+        progress.textContent = '0%'
+        progress.style.width = `0%`
+      }
+    }, 200)
   </script>
 </body>
 

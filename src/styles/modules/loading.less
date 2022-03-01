@@ -1,0 +1,30 @@
+// Code from:
+// https://github.com/loadingio/css-spinner/
+
+.loading {
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid @blue;
+    border-color: @blue transparent @blue transparent;
+    animation: lds-dual-ring @loading-anim linear infinite;
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

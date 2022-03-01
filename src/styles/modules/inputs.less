@@ -1,4 +1,4 @@
-input,
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
 select {
   width: 100%;
   padding: 14px 16px;
@@ -15,4 +15,8 @@ select {
   &.rounded {
     border-radius: 1000px;
   }
+}
+
+input[type="range"] {
+  width: 100%;
 }

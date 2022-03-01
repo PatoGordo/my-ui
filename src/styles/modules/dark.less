@@ -17,7 +17,7 @@ html.dark {
   }
 
   h2 {
-    color: #fdfdfd;
+    color: #eeeeee;
   }
 
   h3 {
@@ -29,7 +29,8 @@ html.dark {
   q,
   li,
   dd,
-  dt {
+  dt,
+  label {
     color: #dfdfdf;
   }
 
@@ -45,18 +46,42 @@ html.dark {
     }
   }
 
+  .progress {
+    background: #42445A !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background-color: @blue;
+
+        &:before {
+          background-color: white;
+        }
+      }
+    }
+
+    .slider {
+      background-color: #2f2f3b;
+
+      &:before {
+        background-color: #464658;
+      }
+    }
+  }
+
   input,
   select,
   textarea {
-    background: #42445A;
-    color: #fff;
+    background: #42445A !important;
+    color: #fff !important;
 
     &::placeholder {
-      color: #dedede;
+      color: #dedede !important;
     }
 
     &.outlined {
-      background: transparent;
+      background: transparent !important;
       border: 1px solid #878787;
     }
   }
