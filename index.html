@@ -17,7 +17,7 @@
 
   <!-- Custom Styles -->
   <script>
-    // less = { env: "production", async: false, fileAsync: false, poll: 1000, useFileCache: true }
+    less = { env: "production", async: false, fileAsync: false, poll: 1000, useFileCache: true }
   </script>
   <link rel="stylesheet/less" type="text/css" href="src/styles/style.less" />
   <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
@@ -367,6 +367,8 @@
 
     document.querySelector("#theme").addEventListener("click", (e) => {
       const html = document.querySelector("html")
+
+      html.classList.add("theme-change")
 
       if (html.className.includes("dark")) {
         html.classList.remove("dark")
