@@ -311,7 +311,7 @@
   </section>
 
   <section class="container" style="padding: 16px 0; gap: 8px;">
-    <h1 class="title" style="margin-left: 16px;">Topbars/Navbars</h1>
+    <h1 class="title" style="margin-left: 16px;">Topbars/Bottombars</h1>
 
     <h2 class="sub-title" style="margin-left: 16px;">Centered navbar</h2>
     <nav class="navbar centered">
@@ -340,6 +340,26 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Learn</a></li>
       </ul>
+    </nav>
+
+    <h2 class="sub-title" style="margin-left: 16px">Bottom bar</h2>
+    <nav class="bottombar bg-purple">
+      <span class="item active">
+        <span class="iconify" data-icon="ant-design:home-filled"></span>
+        Home
+      </span>
+      <span class="item">
+        <span class="iconify" data-icon="ant-design:search-outlined"></span>
+        Search
+      </span>
+      <span class="item">
+        <span class="iconify" data-icon="bi:music-note-list"></span>
+        Playlists
+      </span>
+      <span class="item">
+        <span class="iconify" data-icon="ooui:user-active"></span>
+        Profile
+      </span>
     </nav>
   </section>
 
@@ -372,10 +392,10 @@
 
       if (html.className.includes("dark")) {
         html.classList.remove("dark")
-        html.classList.remove("dark-navbar")
+        html.classList.remove("dark-elements")
       } else {
         html.classList.add("dark")
-        html.classList.add("dark-navbar")
+        html.classList.add("dark-elements")
       }
     })
 

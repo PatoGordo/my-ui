@@ -1,0 +1,38 @@
+.bottombar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 60px;
+  background: @blue;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  padding: 32px;
+  .item {
+    display: grid;
+    place-items: center;
+    gap: 4px;
+    color: #dedede;
+    text-align: center;
+    font-size: 11px;
+    transition: filter @anim;
+    &:hover {
+      filter: brightness(0.8);
+    }
+    svg {
+      color: #dedede !important;
+    }
+    &.active {
+      .c-white();
+      svg {
+        .c-white();
+      }
+    }
+  }
+  .item svg, svg.item {
+    width: 24px;
+    height: 24px;
+    color: @white;
+  }
+}

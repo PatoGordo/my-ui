@@ -100,10 +100,9 @@ html.dark {
     }
   }
 
-  &.dark-navbar {
-    .navbar {
+  &.dark-elements, &.dark-navbar {
+    .navbar, .bottombar {
       background: #272836 !important;
-      color: #fff;
       box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.045);
 
       &.content {
@@ -111,10 +110,22 @@ html.dark {
         color: #fff !important;
       }
     }
+    
+    .navbar {
+      color: #fff;
+    }
 
     .mobile-content {
       background: #272832 !important;
       color: #fff !important;
+    }
+    
+    .card {
+      header,
+      main,
+      footer {
+        background: #42445A !important;
+      }
     }
   }
 }
