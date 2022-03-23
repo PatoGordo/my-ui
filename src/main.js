@@ -43,5 +43,5 @@ Promise.all([
 ]).then(() => {
   // console.log(css)
   // window.message.textContent = css.trim()
-  // window.message.textContent = localStorage.getItem('http://localhost:7700/src/styles/style.less')
+  window.message.textContent = localStorage.getItem('http://localhost:7700/src/styles/style.less')
 })
