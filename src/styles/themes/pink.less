@@ -1,0 +1,59 @@
+html.pink-theme {
+
+  .navbar,
+  .bottombar {
+    background: @pink  !important;
+
+    &.content {
+      background: transparent !important;
+      color: #fff !important;
+    }
+  }
+
+  .navbar {
+    background: @pink  !important;
+    color: #fff;
+  }
+
+  .mobile-content {
+    background: @deep-pink !important;
+    color: #fff !important;
+  }
+
+  .card {
+    header {
+      background: @pink  !important;
+
+      h3,
+      small {
+        color: @white  !important;
+      }
+    }
+  }
+
+  .progress .indicator {
+    background: @pink  !important;
+    color: @white  !important;
+  }
+
+  .loading::after {
+    border-color: @pink transparent @pink transparent !important;
+  }
+
+  .tag {
+    background: @pink  !important;
+    color: @white  !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @pink  !important;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+  }
+}

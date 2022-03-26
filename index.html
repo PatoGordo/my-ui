@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="purple-theme">
 
 <head>
   <meta charset="UTF-8">
@@ -28,8 +28,8 @@
       place-items: center;
     }
 
-    body {
-      width: min(420px, 100%) !important;
+    .app-content {
+      width: min(510px, 100%) !important;
     }
 
     #colors {
@@ -84,7 +84,7 @@
   </style>
 </head>
 
-<body>
+<body class="container center">
   <nav id="navbar" class="navbar responsive bg-purple">
     <h1>My UI</h1>
     <span id="toggler" class="iconify toggler" data-icon="charm:menu-hamburger"></span>
@@ -99,291 +99,317 @@
     <li><a href="https://github.com/PatoGordo/my-ui">Github</a></li>
   </ul>
 
-  <div class="container distance row center" style="justify-content: space-between !important;">
-    <label for="theme"><strong>Dark mode</strong></label>
-    <label class="switch">
-      <input id="theme" type="checkbox">
-      <span class="slider rounded c-purple"></span>
-    </label>
+  <div class="container center app-content">
+    <div class="container distance row center" style="justify-content: space-between !important;">
+      <label for="theme"><strong>Dark mode</strong></label>
+      <label class="switch">
+        <input id="theme" type="checkbox">
+        <span class="slider rounded c-purple"></span>
+      </label>
+    </div>
+
+    <div class="container distance">
+      <label for="theme"><strong>Choose the theme</strong></label>
+      <select class="outlined" id="theme-color">
+        <option value="purple">Purple</option>
+        <option value="blue">Blue</option>
+        <option value="pink">Pink</option>
+        <option value="orange">Orange</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+      </select>
+    </div>
+
+    <section class="container distance">
+      <h1 class="title">Typography</h1>
+
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+
+      <h2 class="sub-title">Paragraph and Span example</h2>
+      <p>Paragraph example Paragraph example Paragraph example Paragraph example</p>
+      <span>Span example Span example Span example Span example Span example Span example</span>
+
+      <h2 class="sub-title">Quotations example</h2>
+      <div>
+        <q>It is never too late to be what you might have been.</q>
+        <p class="quote-reference">George Eliot</p>
+      </div>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Lists</h1>
+
+      <h2 class="sub-title">Dotted list</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <h2 class="sub-title">Numbered list</h2>
+      <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <h2 class="sub-title">Description list</h2>
+      <dl>
+        <dt>Item 1</dt>
+        <dd>- is the first item</dd>
+        <dt>Item 2</dt>
+        <dd>- is the second item</dd>
+        <dt>Item 3</dt>
+        <dd>- is the third item</dd>
+      </dl>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Colors</h1>
+
+      <div id="colors" class="container"></div>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Buttons</h1>
+
+      <div class="container">
+        <h2 class="sub-title">Normal button</h2>
+        <button>Vanilla button</button>
+        <button class="outlined">Vanilla outlined button</button>
+        <button class="bg-blue c-white">Normal button</button>
+        <button class="outlined border-pink">Outlined and colored button</button>
+
+        <h2 class="sub-title">Rounded button</h2>
+        <button class="rounded bg-deep-purple c-white">Rounded button</button>
+        <button class="outlined rounded border-deep-purple">Rounded outlined button</button>
+
+        <h2 class="sub-title">Half button</h2>
+        <span class="container row">
+          <button class="bg-green c-white half">Half button</button>
+          <button class="outlined border-red half">Half outlined button</button>
+        </span>
+
+        <h2 class="sub-title">Half rounded button</h2>
+        <span class="container row">
+          <button class="rounded bg-pink c-white half">Half rounded button</button>
+          <button class="rounded outlined border-orange half">Half rounded button</button>
+        </span>
+      </div>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Inputs and Textareas</h1>
+
+      <h2 class="sub-title">Inputs</h2>
+      <div class="container">
+        <label class="osr" for="name">Vanilla input</label>
+        <input id="name" type="text" placeholder="What is your name?" />
+
+        <label class="osr" for="name2">Outlined input</label>
+        <input class="outlined" id="name2" type="text" placeholder="What is your name?" />
+
+        <label class="osr" for="name3">Rounded input</label>
+        <input class="rounded" id="name3" type="text" placeholder="What is your name?" />
+
+        <label class="osr" for="name4">Rounded outlined input</label>
+        <input class="rounded outlined" id="name4" type="text" placeholder="What is your name?" />
+      </div>
+
+      <h2 class="sub-title">Select inputs</h2>
+      <div class="container">
+        <label class="osr" for="language">Select input</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="pt">Portuguese</option>
+          <option value="es">Spanish</option>
+        </select>
+
+        <label class="osr" for="language">Select input</label>
+        <select class="outlined" id="language">
+          <option value="en">English</option>
+          <option value="pt">Portuguese</option>
+          <option value="es">Spanish</option>
+        </select>
+      </div>
+
+      <h2 class="sub-title">Textareas</h2>
+      <div class="container">
+        <label class="osr" for="mesaage">Vanilla textarea</label>
+        <textarea id="message" placeholder="What is your message?"></textarea>
+
+        <label class="osr" for="mesaage2">Outlined textarea</label>
+        <textarea class="outlined" id="message2" placeholder="What is your message?"></textarea>
+
+        <label class="osr" for="mesaage3">Rounded textarea</label>
+        <textarea class="rounded" id="message3" placeholder="What is your message?"></textarea>
+
+        <label class="osr" for="mesaage4">Rounded outlined textarea</label>
+        <textarea class="rounded outlined" id="message4" placeholder="What is your message?"></textarea>
+      </div>
+
+      <h2 class="sub-title">Checkbox</h2>
+      <div class="container row v-center h-start">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Vanilla checkbox</label>
+      </div>
+
+      <h2 class="sub-title">Radio</h2>
+      <div class="container row v-center h-start">
+        <input type="radio" id="radio">
+        <label for="radio">Vanilla radio</label>
+      </div>
+
+      <h2 class="sub-title">Range</h2>
+      <div class="container row v-center h-start">
+        <input type="range" min="0" max="100" value="10">
+      </div>
+
+      <h2 class="sub-title">Switch</h2>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider rounded c-purple"></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Progress bar and Loading</h1>
+
+      <h2 class="sub-title">Progress bar</h2>
+      <div class="progress" checked>
+        <span class="indicator" id="progress" style="width: 0%">0%</span>
+      </div>
+
+      <h2 class="sub-title">Loading spinner</h2>
+      <div class="loading"></div>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Cards</h1>
+
+      <h2>Normal card</h2>
+      <div class="card">
+        <header class="bg-pink c-white">
+          <h3>Card Title</h3>
+          <small>Posted at: 02/27/2022</small>
+        </header>
+        <main>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGsKD8xnoUuZd2FVax3zG4QrUqwSOBtlBng&usqp=CAU" alt="Card image">
+          <p>Card description Card description Card description Card description Card description </p>
+        </main>
+        <footer>
+          <a href="#">Read more</a>
+        </footer>
+      </div>
+
+      <h2 class="sub-title">No image and divided card</h2>
+      <div class="card divided no-img">
+        <header>
+          <h3>Card Title</h3>
+          <small>Posted at: 02/27/2022</small>
+        </header>
+        <main>
+          <p>Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description</p>
+        </main>
+        <footer>
+          <a href="#">Read more</a>
+        </footer>
+      </div>
+    </section>
+
+    <section class="container distance">
+      <h2 class="title">Tags</h2>
+      <span class="container row center wrap">
+        <span class="tag bg-purple c-white">Rabbit 🐇</span>
+        <span class="tag bg-purple c-white">Cat 😺</span>
+        <span class="tag bg-purple c-white">Dog 🐶</span>
+        <span class="tag bg-purple c-white">Duck 🦆</span>
+        <span class="tag bg-purple c-white">Otter 🦦</span>
+        <span class="tag bg-purple c-white">Frog 🐸</span>
+      </span>
+    </section>
+
+    <section class="container" style="padding: 16px 0; gap: 8px;">
+      <h1 class="title" style="margin-left: 16px;">Topbars/Bottombars</h1>
+
+      <h2 class="sub-title" style="margin-left: 16px;">Centered navbar</h2>
+      <nav class="navbar centered">
+        <h1 class="title">Navbar Text</h1>
+      </nav>
+
+      <h2 class="sub-title" style="margin-left: 16px;">Navbar with content</h2>
+      <nav class="navbar bg-deep-purple">
+        <h1 class="title">Navbar Text</h1>
+
+        <ul class="content">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Learn</a></li>
+        </ul>
+      </nav>
+
+      <h2 class="sub-title" style="margin-left: 16px;">Responsive navbar</h2>
+      <nav class="navbar responsive bg-pink">
+        <h1 class="title">Navbar Text</h1>
+
+        <span class="iconify toggler" data-icon="charm:menu-hamburger"></span>
+
+        <ul class="content">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Learn</a></li>
+        </ul>
+      </nav>
+
+      <h2 class="sub-title" style="margin-left: 16px">Bottom bar</h2>
+      <nav class="bottombar bg-purple">
+        <span class="item active">
+          <span class="iconify" data-icon="ant-design:home-filled"></span>
+          Home
+        </span>
+        <span class="item">
+          <span class="iconify" data-icon="ant-design:search-outlined"></span>
+          Search
+        </span>
+        <span class="item">
+          <span class="iconify" data-icon="bi:music-note-list"></span>
+          Playlists
+        </span>
+        <span class="item">
+          <span class="iconify" data-icon="ooui:user-active"></span>
+          Profile
+        </span>
+      </nav>
+    </section>
+
+    <section class="container distance">
+      <h1 class="title">Miscellaneous</h1>
+
+      <a href="#">Anchor/Link element</a>
+    </section>
   </div>
-
-  <section class="container distance">
-    <h1 class="title">Typography</h1>
-
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-
-    <h2 class="sub-title">Paragraph and Span example</h2>
-    <p>Paragraph example Paragraph example Paragraph example Paragraph example</p>
-    <span>Span example Span example Span example Span example Span example Span example</span>
-
-    <h2 class="sub-title">Quotations example</h2>
-    <div>
-      <q>It is never too late to be what you might have been.</q>
-      <p class="quote-reference">George Eliot</p>
-    </div>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Lists</h1>
-
-    <h2 class="sub-title">Dotted list</h2>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-
-    <h2 class="sub-title">Numbered list</h2>
-    <ol>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-    </ol>
-
-    <h2 class="sub-title">Description list</h2>
-    <dl>
-      <dt>Item 1</dt>
-      <dd>- is the first item</dd>
-      <dt>Item 2</dt>
-      <dd>- is the second item</dd>
-      <dt>Item 3</dt>
-      <dd>- is the third item</dd>
-    </dl>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Colors</h1>
-
-    <div id="colors" class="container"></div>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Buttons</h1>
-
-    <div class="container">
-      <h2 class="sub-title">Normal button</h2>
-      <button>Vanilla button</button>
-      <button class="outlined">Vanilla outlined button</button>
-      <button class="bg-blue c-white">Normal button</button>
-      <button class="outlined border-pink">Outlined and colored button</button>
-
-      <h2 class="sub-title">Rounded button</h2>
-      <button class="rounded bg-deep-purple c-white">Rounded button</button>
-      <button class="outlined rounded border-deep-purple">Rounded outlined button</button>
-
-      <h2 class="sub-title">Half button</h2>
-      <span class="container row">
-        <button class="bg-green c-white half">Half button</button>
-        <button class="outlined border-red half">Half outlined button</button>
-      </span>
-
-      <h2 class="sub-title">Half rounded button</h2>
-      <span class="container row">
-        <button class="rounded bg-pink c-white half">Half rounded button</button>
-        <button class="rounded outlined border-orange half">Half rounded button</button>
-      </span>
-    </div>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Inputs and Textareas</h1>
-
-    <h2 class="sub-title">Inputs</h2>
-    <div class="container">
-      <label class="osr" for="name">Vanilla input</label>
-      <input id="name" type="text" placeholder="What is your name?" />
-
-      <label class="osr" for="name2">Outlined input</label>
-      <input class="outlined" id="name2" type="text" placeholder="What is your name?" />
-
-      <label class="osr" for="name3">Rounded input</label>
-      <input class="rounded" id="name3" type="text" placeholder="What is your name?" />
-
-      <label class="osr" for="name4">Rounded outlined input</label>
-      <input class="rounded outlined" id="name4" type="text" placeholder="What is your name?" />
-    </div>
-
-    <h2 class="sub-title">Select inputs</h2>
-    <div class="container">
-      <label class="osr" for="language">Select input</label>
-      <select id="language">
-        <option value="en">English</option>
-        <option value="pt">Portuguese</option>
-        <option value="es">Spanish</option>
-      </select>
-
-      <label class="osr" for="language">Select input</label>
-      <select class="outlined" id="language">
-        <option value="en">English</option>
-        <option value="pt">Portuguese</option>
-        <option value="es">Spanish</option>
-      </select>
-    </div>
-
-    <h2 class="sub-title">Textareas</h2>
-    <div class="container">
-      <label class="osr" for="mesaage">Vanilla textarea</label>
-      <textarea id="message" placeholder="What is your message?"></textarea>
-
-      <label class="osr" for="mesaage2">Outlined textarea</label>
-      <textarea class="outlined" id="message2" placeholder="What is your message?"></textarea>
-
-      <label class="osr" for="mesaage3">Rounded textarea</label>
-      <textarea class="rounded" id="message3" placeholder="What is your message?"></textarea>
-
-      <label class="osr" for="mesaage4">Rounded outlined textarea</label>
-      <textarea class="rounded outlined" id="message4" placeholder="What is your message?"></textarea>
-    </div>
-
-    <h2 class="sub-title">Checkbox</h2>
-    <div class="container row v-center h-start">
-      <input type="checkbox" id="checkbox">
-      <label for="checkbox">Vanilla checkbox</label>
-    </div>
-
-    <h2 class="sub-title">Radio</h2>
-    <div class="container row v-center h-start">
-      <input type="radio" id="radio">
-      <label for="radio">Vanilla radio</label>
-    </div>
-
-    <h2 class="sub-title">Range</h2>
-    <div class="container row v-center h-start">
-      <input type="range" min="0" max="100" value="10">
-    </div>
-
-    <h2 class="sub-title">Switch</h2>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider rounded c-purple"></span>
-    </label>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Progress bar and Loading</h1>
-
-    <h2 class="sub-title">Progress bar</h2>
-    <div class="progress" checked>
-      <span class="indicator" id="progress" style="width: 0%">0%</span>
-    </div>
-
-    <h2 class="sub-title">Loading spinner</h2>
-    <div class="loading"></div>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Cards</h1>
-
-    <h2>Normal card</h2>
-    <div class="card">
-      <header class="bg-pink c-white">
-        <h3>Card Title</h3>
-        <small>Posted at: 02/27/2022</small>
-      </header>
-      <main>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGsKD8xnoUuZd2FVax3zG4QrUqwSOBtlBng&usqp=CAU" alt="Card image">
-        <p>Card description Card description Card description Card description Card description </p>
-      </main>
-      <footer>
-        <a href="#">Read more</a>
-      </footer>
-    </div>
-
-    <h2 class="sub-title">No image and divided card</h2>
-    <div class="card divided no-img">
-      <header>
-        <h3>Card Title</h3>
-        <small>Posted at: 02/27/2022</small>
-      </header>
-      <main>
-        <p>Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description Card description</p>
-      </main>
-      <footer>
-        <a href="#">Read more</a>
-      </footer>
-    </div>
-  </section>
-  
-  <section class="container distance">
-    <h2 class="title">Tags</h2>
-    <span class="container row center wrap">
-      <span class="tag bg-purple c-white">Rabbit 🐇</span>
-      <span class="tag bg-purple c-white">Cat 😺</span>
-      <span class="tag bg-purple c-white">Dog 🐶</span>
-      <span class="tag bg-purple c-white">Duck 🦆</span>
-      <span class="tag bg-purple c-white">Otter 🦦</span>
-      <span class="tag bg-purple c-white">Frog 🐸</span>
-    </span>
-  </section>
-
-  <section class="container" style="padding: 16px 0; gap: 8px;">
-    <h1 class="title" style="margin-left: 16px;">Topbars/Bottombars</h1>
-
-    <h2 class="sub-title" style="margin-left: 16px;">Centered navbar</h2>
-    <nav class="navbar centered">
-      <h1 class="title">Navbar Text</h1>
-    </nav>
-
-    <h2 class="sub-title" style="margin-left: 16px;">Navbar with content</h2>
-    <nav class="navbar bg-deep-purple">
-      <h1 class="title">Navbar Text</h1>
-
-      <ul class="content">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Learn</a></li>
-      </ul>
-    </nav>
-
-    <h2 class="sub-title" style="margin-left: 16px;">Responsive navbar</h2>
-    <nav class="navbar responsive bg-pink">
-      <h1 class="title">Navbar Text</h1>
-
-      <span class="iconify toggler" data-icon="charm:menu-hamburger"></span>
-
-      <ul class="content">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Learn</a></li>
-      </ul>
-    </nav>
-
-    <h2 class="sub-title" style="margin-left: 16px">Bottom bar</h2>
-    <nav class="bottombar bg-purple">
-      <span class="item active">
-        <span class="iconify" data-icon="ant-design:home-filled"></span>
-        Home
-      </span>
-      <span class="item">
-        <span class="iconify" data-icon="ant-design:search-outlined"></span>
-        Search
-      </span>
-      <span class="item">
-        <span class="iconify" data-icon="bi:music-note-list"></span>
-        Playlists
-      </span>
-      <span class="item">
-        <span class="iconify" data-icon="ooui:user-active"></span>
-        Profile
-      </span>
-    </nav>
-  </section>
-
-  <section class="container distance">
-    <h1 class="title">Miscellaneous</h1>
-
-    <a href="#">Anchor/Link element</a>
-  </section>
 
   <script src="src/main.js"></script>
   <script>
     let opened = false
+
+    document.querySelector("#theme-color").addEventListener("input", (e) => {
+      const themes = ["purple", "pink", "blue", "orange", "green", "red"]
+      themes.forEach((t) => {
+        const html = document.querySelector("html")
+        if (t === e.target.value) {
+          return html.classList.add(t + '-theme')
+        } else {
+          html.classList.remove(t + '-theme')
+        }
+      })
+    })
 
     document.querySelector("#toggler").addEventListener("click", () => {
       if (!opened) {

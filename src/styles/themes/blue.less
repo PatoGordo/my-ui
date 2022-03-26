@@ -1,0 +1,59 @@
+html.blue-theme {
+
+  .navbar,
+  .bottombar {
+    background: @blue  !important;
+
+    &.content {
+      background: transparent !important;
+      color: #fff !important;
+    }
+  }
+
+  .navbar {
+    background: @blue  !important;
+    color: #fff;
+  }
+
+  .mobile-content {
+    background: @deep-blue  !important;
+    color: #fff !important;
+  }
+
+  .card {
+    header {
+      background: @blue  !important;
+
+      h3,
+      small {
+        color: @white  !important;
+      }
+    }
+  }
+
+  .progress .indicator {
+    background: @blue  !important;
+    color: @white  !important;
+  }
+
+  .loading::after {
+    border-color: @blue transparent @blue transparent !important;
+  }
+
+  .tag {
+    background: @blue  !important;
+    color: @white  !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @blue  !important;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+  }
+}

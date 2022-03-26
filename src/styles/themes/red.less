@@ -1,0 +1,61 @@
+
+html.red-theme {
+
+  .navbar,
+  .bottombar {
+    background: @red  !important;
+
+    &.content {
+      background: transparent !important;
+      color: #fff !important;
+    }
+  }
+
+  .navbar {
+    background: @red  !important;
+    color: #fff;
+  }
+
+  .mobile-content {
+    background: @deep-red  !important;
+    color: #fff !important;
+  }
+
+  .card {
+    header {
+      background: @red  !important;
+
+      h3,
+      small {
+        color: @white  !important;
+      }
+    }
+  }
+
+  .progress .indicator {
+    background: @red  !important;
+    color: @white  !important;
+  }
+
+  .loading::after {
+    border-color: @red transparent @red transparent !important;
+  }
+
+  .tag {
+    background: @red  !important;
+    color: @white  !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @red  !important;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+  }
+}
+

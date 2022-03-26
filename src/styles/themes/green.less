@@ -1,0 +1,61 @@
+
+html.green-theme {
+
+  .navbar,
+  .bottombar {
+    background: @green  !important;
+
+    &.content {
+      background: transparent !important;
+      color: #fff !important;
+    }
+  }
+
+  .navbar {
+    background: @green  !important;
+    color: #fff;
+  }
+
+  .mobile-content {
+    background: @deep-green  !important;
+    color: #fff !important;
+  }
+
+  .card {
+    header {
+      background: @green  !important;
+
+      h3,
+      small {
+        color: @white  !important;
+      }
+    }
+  }
+
+  .progress .indicator {
+    background: @green  !important;
+    color: @white  !important;
+  }
+
+  .loading::after {
+    border-color: @green transparent @green transparent !important;
+  }
+
+  .tag {
+    background: @green  !important;
+    color: @white  !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @green  !important;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+  }
+}
+

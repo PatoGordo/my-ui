@@ -1,0 +1,61 @@
+
+html.orange-theme {
+
+  .navbar,
+  .bottombar {
+    background: @orange  !important;
+
+    &.content {
+      background: transparent !important;
+      color: #fff !important;
+    }
+  }
+
+  .navbar {
+    background: @orange  !important;
+    color: #fff;
+  }
+
+  .mobile-content {
+    background: @deep-orange  !important;
+    color: #fff !important;
+  }
+
+  .card {
+    header {
+      background: @orange  !important;
+
+      h3,
+      small {
+        color: @white  !important;
+      }
+    }
+  }
+
+  .progress .indicator {
+    background: @orange  !important;
+    color: @white  !important;
+  }
+
+  .loading::after {
+    border-color: @orange transparent @orange transparent !important;
+  }
+
+  .tag {
+    background: @orange  !important;
+    color: @white  !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @orange  !important;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+  }
+}
+
